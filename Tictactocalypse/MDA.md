@@ -1,0 +1,52 @@
+---
+layout: article
+title:  "MDA"
+---
+
+## Definition
+
+In game design the **Mechanics-Dynamics-Aesthetics** (MDA) framework is a tool used to analyze games. It formalizes the consumption of games by breaking them down into three components: Mechanics, Dynamics and Aesthetics. These three words have been used informally for many years to describe various aspects of games, but the MDA framework provides precise definitions for these terms and seeks to explain how they relate to each other and influence the player's experience.
+
+![qze](/assets/images/Tictactocalypse/Mda_framework.png)
+
+* **Mechanics** are the base components of the game - its rules, every basic action the player can take in the game, the algorithms and data structures in the game engine etc.
+* **Dynamics** are the run-time behavior of the mechanics acting on player input and "cooperating" with other mechanics.
+* **Aesthetics** are the emotional responses evoked in the player.
+There are many types of aesthetics, including but not limited to the following eight stated by Hunicke, LeBlanc and Zubek:
+
+  * ***Sensation*** (Game as sense-pleasure): Player enjoys memorable audio-visual effects.
+  * ***Fantasy*** (Game as make-believe): Imaginary world.
+  * ***Narrative*** (Game as drama): A story that drives the player to keep coming back
+  * ***Challenge*** (Game as obstacle course): Urge to master something. Boosts a game's replayability.
+  * ***Fellowship*** (Game as social framework): A community where the player is an active part of it. Almost exclusive for multiplayer games.
+  * ***Discovery*** (Game as uncharted territory): Urge to explore game world.
+  * ***Expression*** (Game as self-discovery): Own creativity. For example, creating character resembling player's own avatar.
+  * ***Submission*** (Game as pastime): Connection to the game, as a whole, despite of constraints.
+
+## Tictactocalypse analysis
+
+### Mechanics
+
+Players place tokens on a 4 by 4 grid, trying to align groups of three pieces, to earn point. Once a player gets the required amount of point to win, the game stops. If the timer runs out and no one has reached the goal, the player with the most point wins the game.
+
+Players can also trigger events to knock other players’ pieces of the board, or to reinforce their position by making pieces invulnerable to events. Events have a cooldown after they have been triggered according to the strength of the triggered event. Players receive new event every 5 seconds.
+
+If a piece is away from its slot but still on the board, a clock will appear on the piece, and after a short time, the piece will be moved to its original position. During this time, other pieces can claim the slot by placing a piece on it.
+
+Every 5 seconds, all players win 3 points per groups of three pieces aligned, and the events each player can trigger are changed.
+
+### Dynamics
+
+Given that there are 2 types of events, events helping the player who triggers it and events that slow all players, they have to choose carefully what event play at what time of the game, as they might do more damage to your own pieces than to other players.
+
+The cooldown of events is not shown, and players have to plan when to trigger their events in order to maximize the number of events they can play, as they only receive a new event every 5 seconds.
+
+Players have to find the balance between trying to actively harm other player and trying to place pieces on the board to collect points in order to win, and few events serve only one of these goals.
+
+After a few games, players will know what event do what and how to place pieces in order to optimize their position, as some event are only harmful to some part of the bo ard. Players will also know how to place pieces quickly and efficiently, as the placing system can be difficult to apprehend. In the end, the fastest players will be rewarded.
+
+### Aesthetics
+
+#### Fellowship, Challenge, Sensation, Submission
+
+The game being a competitive multiplayer game, it sure forces players to deal with each other, as they fight in order to win. Some events being exclusively destructive and harmful, even to the player triggering it, these actions of pure destruction may change the relationships of players past the time of play. This game is also very challenging. More players mean more events, making the game more and more apocalyptic. Players can play in a very competitive mode, or they can play in a more casual way, just messing around with the events. Advanced players only have the knowledge of what the events do, they are not intrinsically favored by the game.
