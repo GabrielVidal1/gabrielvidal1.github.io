@@ -1,8 +1,13 @@
 ---
 layout: article
 title:  "Rulesheet"
+date: 2021-02-05 21:31:11 +0100
+author: GabrielVidal
+category: Tictactocalypse
+permalink: /Tictactocalypse/Rulesheet
 tags:
 - Gamedev
+show_edit_on_github: false
 ---
 
 ### Main Menu
@@ -34,7 +39,7 @@ Some events may move your pieces around. If the piece falls off the grid, it is 
 <html>
    <head>
     <style>
-      @font-face { font-family: Keyboard; src: url('/assets/fonts/Keyboard.otf') format("opentype"); }
+      @font-face { font-family: Keyboard; src: url('/Tictactocalypse/assets/fonts/Keyboard.otf') format("opentype"); }
       .keyboard {
          font-family: Keyboard;
          font-size: 2.5em;

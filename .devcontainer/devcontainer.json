@@ -12,7 +12,18 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			".jekyll-cache": true,
+			".vscode": true,
+			"docker": true,
+			"_site": true
+		}
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.

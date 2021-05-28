@@ -1,9 +1,20 @@
 ---
 layout: article
 title: Tictactocalypse
+author: GabrielVidal
+date: 2021-02-05 21:31:11 +0100
+categories:
+- Tictactocalypse
+- Project
+permalink: /Tictactocalypse/
+tags:
+- Gamedev
+cover: /Tictactocalypse/assets/thumbnail.png
+excerpt: >
+    Tictactocalypse is a funnier, realtime and apocalyptic version of the game TicTac-Toe. Players battle to place pieces on a board, and trigger events in order to disrupt others! Play up to four players at the same time!
 ---
 
-<img src="/assets/images/Tictactocalypse/cover.png" width="100%"/>
+<img src="/Tictactocalypse/assets/cover.png" width="100%"/>
 
 Tictactocalypse is a funnier, realtime and apocalyptic version of the game TicTac-Toe. Players battle to place pieces on a board, and trigger events in order to disrupt others! Play up to four players at the same time!
 
@@ -18,7 +29,7 @@ The project was made in 3 weeks with the following game design documents to prod
 * #### A **[final reflection](/Tictactocalypse/FinalReflection.html)** on the project, reflection on the game and its different iterations and the difference from the first prototype
 
 <p align="center">
-<img src="/assets/images/Tictactocalypse/screenshot1.png" width="80%" alt="screenshot 1">
+<img src="/Tictactocalypse/assets/screenshot1.png" width="80%" alt="screenshot 1">
 </p>
 
 ### Download the game
