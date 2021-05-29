@@ -8,6 +8,7 @@ permalink: /Tictactocalypse/Rulesheet
 tags:
 - Gamedev
 show_edit_on_github: false
+prefix_category: true
 ---
 
 ### Main Menu
