@@ -22,11 +22,11 @@ I made this game as a game design project for the game design class I took for o
 
 The project was made in 3 weeks with the following game design documents to produce:
 
-* #### A **[rulesheet](/Tictactocalypse/Rulesheet.html)**, which describes all that the player need to know in order to play the game (the goal of the game, the inputs, the events)
+* #### A **[rulesheet](/Tictactocalypse/Rulesheet)**, which describes all that the player need to know in order to play the game (the goal of the game, the inputs, the events)
 
-* #### A **[MDA](/Tictactocalypse/MDA.html)** (Mechanics, Dynamics, Aesthetics) to analyse the game mechanics, the dynamics created by the player with those mechanics and the feelings that the game induce
+* #### A **[MDA](/Tictactocalypse/MDA)** (Mechanics, Dynamics, Aesthetics) to analyse the game mechanics, the dynamics created by the player with those mechanics and the feelings that the game induce
 
-* #### A **[final reflection](/Tictactocalypse/FinalReflection.html)** on the project, reflection on the game and its different iterations and the difference from the first prototype
+* #### A **[final reflection](/Tictactocalypse/Final-Reflection)** on the project, reflection on the game and its different iterations and the difference from the first prototype
 
 <p align="center">
 <img src="/Tictactocalypse/assets/screenshot1.png" width="80%" alt="screenshot 1">
