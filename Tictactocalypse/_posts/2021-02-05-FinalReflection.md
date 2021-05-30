@@ -9,6 +9,7 @@ tags:
 - Gamedev
 show_edit_on_github: false
 prefix_category: true
+cover: /Tictactocalypse/assets/thumbnail.png
 ---
 
 This game is fun to play and triggers competitive behaviors among players, but I think it lacks some elements that could have made it better.
