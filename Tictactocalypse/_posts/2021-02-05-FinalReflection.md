@@ -2,12 +2,10 @@
 layout: article
 title:  "Final Reflection"
 date: 2021-02-05 21:31:11 +0100
-author: GabrielVidal
 category: Tictactocalypse
 permalink: /Tictactocalypse/Final-Reflection
 tags:
 - Gamedev
-show_edit_on_github: false
 prefix_category: true
 cover: /Tictactocalypse/assets/thumbnail.png
 ---

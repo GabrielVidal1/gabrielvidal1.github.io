@@ -6,9 +6,6 @@ tags:
 - Idea
 - CSUMB
 - Game Design
-author: GabrielVidal
-show_edit_on_github: false
-prefix_category: false
 cover: https://economictimes.indiatimes.com/thumb/msid-60217597,width-1200,height-900,resizemode-4,imgsize-73839/the-untold-story-of-a-100mn-diamond-heist-and-how-it-happened.jpg
 ---
 

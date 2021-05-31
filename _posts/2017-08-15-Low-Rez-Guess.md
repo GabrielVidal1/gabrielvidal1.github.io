@@ -5,9 +5,6 @@ date: 2017-08-15
 tags:
 - Gamedev
 - Gamejam
-author: GabrielVidal
-show_edit_on_github: false
-prefix_category: false
 cover: https://img.itch.zone/aW1hZ2UvMTY3NjEwLzc3NjI4NS5wbmc=/315x250%23c/yOGR3B.png
 ---
 

@@ -6,9 +6,6 @@ tags:
 - France-IOI
 - Dev
 - EPITA
-author: GabrielVidal
-show_edit_on_github: false
-prefix_category: false
 cover: https://lh3.googleusercontent.com/proxy/PS15mpnGs7Dr7995SGVnB9bIr0wphCwl-QZBwNiOVHgVLNv8kf36YWrWy-uGa7NFYJWTg1KaRpixMJQz6B5AXI825ET0M1M
 ---
 
