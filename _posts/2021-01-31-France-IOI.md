@@ -6,7 +6,7 @@ tags:
 - France-IOI
 - Dev
 - EPITA
-cover: https://lh3.googleusercontent.com/proxy/PS15mpnGs7Dr7995SGVnB9bIr0wphCwl-QZBwNiOVHgVLNv8kf36YWrWy-uGa7NFYJWTg1KaRpixMJQz6B5AXI825ET0M1M
+cover: http://www.france-ioi.org/dataSite/img/logo.png
 ---
 
 ## France-IOI
