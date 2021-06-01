@@ -6,7 +6,7 @@ tags:
 - France-IOI
 - Dev
 - EPITA
-cover: http://www.france-ioi.org/dataSite/img/logo.png
+cover: /assets/posts/France-IOI/logo.png
 ---
 
 ## France-IOI
