@@ -5,6 +5,7 @@ date: 2021-02-05 21:31:11 +0100
 category: Tictactocalypse
 permalink: /Tictactocalypse/Rulesheet
 tags:
+- Game Design
 - Gamedev
 prefix_category: true
 cover: /Tictactocalypse/assets/thumbnail.png
@@ -83,11 +84,11 @@ Some events may move your pieces around. If the piece falls off the grid, it is 
 </table>
 
 <aside class="wb-fnote" role="note">
-	<dl>
-		<dd id="fn1">
-			<p class="fn-rtn"><a href="#fn1-rf">1.</a> On the numeric keypad</p>
-		</dd>
-	</dl>
+ <dl>
+  <dd id="fn1">
+   <p class="fn-rtn"><a href="#fn1-rf">1.</a> On the numeric keypad</p>
+  </dd>
+ </dl>
 </aside>
 </body>
 </html>
