@@ -29,7 +29,8 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
         "davidanson.vscode-markdownlint",
-		"mhutchie.git-graph"
+		"mhutchie.git-graph",
+		"streetsidesoftware.code-spell-checker"
     ],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
