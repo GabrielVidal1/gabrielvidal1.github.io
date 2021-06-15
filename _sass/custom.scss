@@ -1,3 +1,20 @@
 /* start custom scss snippet */
 
+
+.figure {
+  text-align: center;
+
+  figure {
+    max-width:40rem;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
 /* end custom scss snippet */
