@@ -1,14 +1,15 @@
 ---
 layout: article
-title: What do game need
+title: What do games need
 tags:
 - CSUMB
 - Game Design
+cover: https://www.perforce.com/sites/default/files/image/2020-08/image-blog-game-design-process.jpg
 ---
 
-This text was written for a Game design assigment.
+This text was written for a Game design assignment.
 
-## What do game need?
+## What do games need?
 
 **Games should involve our creativity as much as skill.**
 

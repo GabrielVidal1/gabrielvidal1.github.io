@@ -47,7 +47,8 @@ I then wrote some code to procedurally generate this mesh, starting with a singl
 I wanted to make the plant grow fast in front of the player. To do this, animating the meshes was the next step. One essential component is also noise, to make the plant diverse and procedural. The noise I used is a 3D Perlin noise.
 
 * Radial noise (for the variation in the with of the trunk)
-* qze
+* Noise influence across the length of the stem
+* Noise in the growth animation before reaching the final girth
 
 These noises are controlled across the length of the stem and also across time.
 
