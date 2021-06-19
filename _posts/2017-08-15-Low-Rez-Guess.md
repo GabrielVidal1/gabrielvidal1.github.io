@@ -22,11 +22,11 @@ My idea was to use the low resolution constraint to make things hard to decipher
 
 ## The game
 
-At the beginning of a round, you will see 3 choices, that correspond to the left, right and up directionnal key. All rounds start with a really small and pixelated image at the center of the screen. As time goes on, the picture will grow to fill the entire screen. You have to press the key corresponding to what the image depicts. The faster you are, the more points you get!
+At the beginning of a round, you will see 3 choices, that correspond to the left, right and up directional key. All rounds start with a really small and pixilated image at the center of the screen. As time goes on, the picture will grow to fill the entire screen. You have to press the key corresponding to what the image depicts. The faster you are, the more points you get!
 
 There are various categories of objects (101 to be precise) and they come from training data for deep learning. The data set is available on [Caltech's website](http://www.vision.caltech.edu/Image_Datasets/Caltech101/).
 
-I wanted to make a very accesible game, so I integrated internationalization by supporting 6 languages: English, French, Italian, Spanish, Portuguese and Deutsch. This was easy, because I only had to translate the 101 categories name, and some of the UI text. The major difficulty was find a readable pixalated font, that also support accented letters (for languages like french and spanish). I didn't manage to find one, so I edited one with only ASCII letters to add accented letters.
+I wanted to make a very accessible game, so I integrated internationalization by supporting 6 languages: English, French, Italian, Spanish, Portuguese and Deutsche. This was easy, because I only had to translate the 101 categories name, and some of the UI text. The major difficulty was find a readable pixilated font, that also support accented letters (for languages like french and spanish). I didn't manage to find one, so I edited one with only ASCII letters to add accented letters.
 
 ## Play the game
 
