@@ -3,7 +3,7 @@ layout: article
 title: Primitive Tower Defense
 date: 2016-07-10
 tags:
-- Gamejam
+- Game jam
 - Gamedev
 cover: /assets/posts/Primitive-Tower-Defense/thumbnail.png
 ---

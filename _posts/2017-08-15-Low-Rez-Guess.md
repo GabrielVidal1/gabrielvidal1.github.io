@@ -4,7 +4,7 @@ title: Low Rez Guess
 date: 2017-08-15
 tags:
 - Gamedev
-- Gamejam
+- Game jam
 cover: https://img.itch.zone/aW1hZ2UvMTY3NjEwLzc3NjI4NS5wbmc=/315x250%23c/yOGR3B.png
 ---
 

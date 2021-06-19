@@ -3,7 +3,7 @@ layout: article
 title: New York Christmas
 date: 2016-12-29
 tags:
-- Gamejam
+- Game jam
 - Gamedev
 cover: /assets/posts/NewYork-Christmas/thumbnail.png
 ---

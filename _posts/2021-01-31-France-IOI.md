@@ -1,10 +1,8 @@
 ---
 layout: article
-title: France-IOI intership
+title: France-IOI internship
 tags:
 - Work
-- France-IOI
-- Dev
 - EPITA
 cover: /assets/posts/France-IOI/logo.png
 ---
