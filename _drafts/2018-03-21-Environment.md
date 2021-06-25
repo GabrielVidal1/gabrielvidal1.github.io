@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  Environment and additionnal mechanics
+title:  Environment and additional mechanics
 category: GrenGame
 permalink: /GrenGame/Leaves
 tags:
