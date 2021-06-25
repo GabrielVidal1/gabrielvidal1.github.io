@@ -1,10 +1,20 @@
 ---
 layout: article
 title: Intergalactic Love
-date: 2019-05-16
+categories:
+- Intergalactic-Love
+- Project
+permalink: /Intergalactic-Love/
 tags:
 - CSUMB
 - Gamedev
+articles:
+  data_source: site.categories.GrenGame
+  show_excerpt: true
+  show_readmore: true
+  show_info: true
+cover: /Intergalactic-Love/assets/thumbnail.png
+excerpt: TODO
 ---
 
 TODO
