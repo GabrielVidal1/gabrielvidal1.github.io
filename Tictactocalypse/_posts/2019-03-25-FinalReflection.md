@@ -1,7 +1,6 @@
 ---
 layout: article
 title:  "Final Reflection"
-date: 2021-02-05 21:31:11 +0100
 category: Tictactocalypse
 permalink: /Tictactocalypse/Final-Reflection
 tags:
