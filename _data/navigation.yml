@@ -2,9 +2,9 @@ header:
   - titles:
       # @start locale config
       en      : &EN       Projects
-      fr      : &FR       Projets
+      fr      : &FR       Projects
       # @end locale config
-    url: /projects
+    url: /Projects
 
   - titles:
       # @start locale config

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: projects
+permalink: Projects
 ---
 
 <div class="layout--articles">

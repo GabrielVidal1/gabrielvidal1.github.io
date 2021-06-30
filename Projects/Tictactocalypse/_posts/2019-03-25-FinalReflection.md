@@ -2,12 +2,12 @@
 layout: article
 title:  "Final Reflection"
 category: Tictactocalypse
-permalink: /Tictactocalypse/Final-Reflection
+permalink: Projects/Tictactocalypse/Final-Reflection
 tags:
 - Game Design
 - Gamedev
 prefix_category: true
-cover: /Tictactocalypse/assets/thumbnail.png
+cover: assets/thumbnail.png
 ---
 
 This game is fun to play and triggers competitive behaviors among players, but I think it lacks some elements that could have made it better.

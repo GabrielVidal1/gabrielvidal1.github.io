@@ -2,7 +2,7 @@
 layout: article
 title:  "Rulesheet"
 category: Tictactocalypse
-permalink: /Tictactocalypse/Rulesheet
+permalink: Projects/Tictactocalypse/Rulesheet
 tags:
 - Game Design
 - Gamedev
@@ -39,7 +39,7 @@ Some events may move your pieces around. If the piece falls off the grid, it is 
 <html>
    <head>
     <style>
-      @font-face { font-family: Keyboard; src: url('/Tictactocalypse/assets/fonts/Keyboard.otf') format("opentype"); }
+      @font-face { font-family: Keyboard; src: url('assets/fonts/Keyboard.otf') format("opentype"); }
       .keyboard {
          font-family: Keyboard;
          font-size: 2.5em;

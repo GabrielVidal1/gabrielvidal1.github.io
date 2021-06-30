@@ -2,7 +2,7 @@
 layout: article
 title:  "First Prototype"
 category: GrenGame
-permalink: /GrenGame/First-Prototype
+permalink: Projects/GrenGame/First-Prototype
 tags:
 - Gamedev
 prefix_category: true
@@ -20,7 +20,7 @@ The plants are constructed with multiple cylinders with varying width and positi
 
 <div class="figure">
   <figure>
-    <img src="/GrenGame/assets/prototype/SectionSegment.PNG">
+    <img src="assets/prototype/SectionSegment.PNG">
     <figcaption>The meshes are constructed from triangles</figcaption>
   </figure>
 </div>
@@ -30,13 +30,13 @@ I then wrote some code to procedurally generate this mesh, starting with a singl
 <div class="grid">
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/MeshCreation2.gif">
+      <img src="assets/prototype/MeshCreation2.gif">
       <figcaption>A cylindrical mesh composed of only the two ends</figcaption>
     </figure>
   </div>
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/MeshCreation3.gif">
+      <img src="assets/prototype/MeshCreation3.gif">
       <figcaption>The final result for a single plant segment</figcaption>
     </figure>
   </div>
@@ -56,7 +56,7 @@ The way I constructed the segments permitted me to easily animate the width of t
 
 <div class="figure">
   <figure>
-    <img src="/GrenGame/assets/prototype/MeshCreation4.gif">
+    <img src="assets/prototype/MeshCreation4.gif">
     <figcaption>An animated version of a single trunk segment</figcaption>
   </figure>
 </div>
@@ -66,13 +66,13 @@ The next step was putting these cylinders back to back to create growing stems. 
 <div class="grid">
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/MeshCreation7.gif">
+      <img src="assets/prototype/MeshCreation7.gif">
       <figcaption>A growing stem</figcaption>
     </figure>
   </div>
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/long.png">
+      <img src="assets/prototype/long.png">
       <figcaption>A really long and blocky plant (more like an icycle)</figcaption>
     </figure>
   </div>
@@ -86,29 +86,29 @@ I used Unity raycasts to calculate collision all at once when the mesh is create
 
 <div class="figure">
   <figure>
-    <img src="/GrenGame/assets/prototype/collision.PNG">
+    <img src="assets/prototype/collision.PNG">
     <figcaption>A really long mesh trapped in a confined space</figcaption>
   </figure>
 </div>
 
-I then experiment with very thin, spaghetti-like plants, that would look like cables roaming through the white default sandbox. 
+I then experiment with very thin, spaghetti-like plants, that would look like cables roaming through the white default sandbox.
 
 <div class="grid">
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/cables1.png">
+      <img src="assets/prototype/cables1.png">
     </figure>
   </div>
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/cables2.png">
+      <img src="assets/prototype/cables2.png">
     </figure>
   </div>
 </div>
 
 <div class="figure">
   <figure style="max-width:100%; width: 100%">
-    <img src="/GrenGame/assets/prototype/cables3.png">
+    <img src="assets/prototype/cables3.png">
     <a href="https://www.reddit.com/r/pcmasterrace/comments/5r1cr4/cable_management_from_the_depths_of_hell/"> <figcaption style="font-style: italic;">Cable "management" from the depths of hell</figcaption></a>
   </figure>
 </div>
@@ -120,13 +120,13 @@ Another really important component is the influence of gravity along the plant. 
 <div class="grid">
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/Gravity_Up.PNG">
+      <img src="assets/prototype/Gravity_Up.PNG">
       <figcaption>plants going upwards as they grow</figcaption>
     </figure>
   </div>
   <div class="cell cell--12 cell--lg-6 figure">
     <figure>
-      <img src="/GrenGame/assets/prototype/Gravity_Down.PNG">
+      <img src="assets/prototype/Gravity_Down.PNG">
       <figcaption>Plants with really heavy ends, so going downwards when reaching a certain height</figcaption>
     </figure>
   </div>
@@ -134,7 +134,7 @@ Another really important component is the influence of gravity along the plant. 
 
 <div class="figure">
   <figure style="max-width:100%; width: 100%">
-    <img src="/GrenGame/assets/prototype/WIP7.PNG">
+    <img src="assets/prototype/WIP7.PNG">
     <figcaption>A plant going straight up and then crawling on the floor</figcaption>
   </figure>
 </div>
@@ -145,7 +145,7 @@ Combining all these elements, we can get visuals like this:
 
 <div class="figure">
   <figure>
-    <img src="/GrenGame/assets/prototype/Combination.gif">
+    <img src="assets/prototype/Combination.gif">
     <figcaption>Procedural mesh generation with collision handling and animated growth</figcaption>
   </figure>
 </div>

@@ -4,7 +4,7 @@ title: Intergalactic Love
 categories:
 - Intergalactic-Love
 - Project
-permalink: /Intergalactic-Love/
+permalink: /Projects/Intergalactic-Love/
 tags:
 - CSUMB
 - Gamedev
