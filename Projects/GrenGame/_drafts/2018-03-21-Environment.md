@@ -2,7 +2,7 @@
 layout: article
 title:  Environment and additional mechanics
 category: GrenGame
-permalink: /GrenGame/Leaves
+permalink: /GrenGame/Environment
 tags:
 - Gamedev
 prefix_category: true

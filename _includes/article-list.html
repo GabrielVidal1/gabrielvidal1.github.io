@@ -73,17 +73,21 @@ include.type == 'item'
                                 <div class="item__content">
                                     {%- if include.show_info -%}
                                     <span class="item__meta">{{ _article.date | date: __return }}</span> {%- endif -%}
-                                    {%- if _article.categories contains 'Project'-%}
-                                    <a class="item__project button button--outline-primary button--rounded button--xl"
-                                        href={{_article_url}}>{{ _article.title }}</a>
-                                    {% else %}
                                     <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{
                                         _article.title }}</a>
-                                    {%- endif -%}
+
                                 </div>
-                                {%- if _article.prefix_category -%}<a
-                                    class="item__project button button--outline-primary button--rounded button--sm"
-                                    href={{_article.category}}>{{ _article.category }}</a>{%- endif -%}
+
+                                {%- if _article.project -%}
+                                <a class="item__project button button--outline-primary button--rounded button--sm"
+                                    href={{_article.category}} style="float: right;">{{ _article.project }}</a>
+                                {%- if _article.is_project -%}
+                                <a class="item__project button button--outline-primary button--rounded button--sm"
+                                    style="float: right;" href="Projects/{{_article.project}}">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                                {%- endif -%}
+                                {%- endif -%}
                             </li>
 
                             {%- elsif include.type == 'grid' -%} {%- if include.size == 'sm' -%}
