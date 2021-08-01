@@ -26,7 +26,22 @@ titles:
 ---
 
 <div class="layout--archive js-all">
-  {%- include tags.html -%}
+
+  {%- assign _tags = "" | split: "," -%}
+  {%- assign techs = "" | split: "," -%}
+
+  {%- for _tag in site.tags -%}
+    {%- if _tag[0] contains 'Tech' -%}
+      {% assign techs = techs | push:_tag %}
+    {% else %}
+      {% assign _tags = _tags | push:_tag %}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- include tags.html tags=_tags show_all=true -%}
+  <h3>Sort by technology</h3>
+  {%- include tags.html tags=techs-%}
+
   <div class="js-result layout--archive__result d-none">
     {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
   </div>

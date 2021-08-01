@@ -17,4 +17,61 @@
 
 }
 
+@mixin tech {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white;
+}
+
+.tech-Unity {
+  @include tech;
+}
+
+.tech-Angular {
+  @include tech;
+  background-color: rgb(209, 20, 20) !important;
+}
+
+.tech-C {
+  @include tech;
+  background-color: rgb(56, 74, 240) !important;
+}
+
+.tech-Html {
+  @include tech;
+  background-color: #EE5F23 !important;
+}
+
+.tech-Typescript {
+  @include tech;
+  background-color: #2F74C0 !important;
+}
+
+.tech-Shell {
+  @include tech;
+  background-color: #008817 !important;
+}
+
+.tech-Java {
+  @include tech;
+  background-color: #EA2D2E !important;
+}
+
+.tech-CS {
+  @include tech;
+  background-color: #2B006B !important;
+}
+
+.tech-CPP {
+  @include tech;
+  background-color: #00427E !important;
+}
+
+.tech-Sass {
+  @include tech;
+  background-color: #C66494 !important;
+}
+
+
+
 /* end custom scss snippet */

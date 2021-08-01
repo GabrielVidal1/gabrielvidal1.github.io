@@ -72,18 +72,30 @@ include.type == 'item'
                             <li class="item" itemscope itemtype="http://schema.org/BlogPosting" data-tags="{{ _tags }}">
                                 <div class="item__content">
                                     {%- if include.show_info -%}
-                                    <span class="item__meta">{{ _article.date | date: __return }}</span> {%- endif -%}
-                                    {%- if _article.categories contains 'Project'-%}
-                                    <a class="item__project button button--outline-primary button--rounded button--xl"
-                                        href={{_article_url}}>{{ _article.title }}</a>
-                                    {% else %}
-                                    <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{
-                                        _article.title }}</a>
+                                        <span class="item__meta">{{ _article.date | date: __return }}</span>
                                     {%- endif -%}
+
+                                    {%- if _article.prefix_category -%}
+                                        <a class="item__project button button--outline-primary button--rounded button--sm" href={{_article.category}}>
+                                            {{ _article.category }}
+                                        </a>
+                                    {%- endif -%}
+
+                                    <span></span>
+                                    <a itemprop="headline" class="item__header" href={{_article_url}}>{{_article.title}}</a>
                                 </div>
-                                {%- if _article.prefix_category -%}<a
-                                    class="item__project button button--outline-primary button--rounded button--sm"
-                                    href={{_article.category}}>{{ _article.category }}</a>{%- endif -%}
+
+                                
+
+                                {%- for tag in _article.tags -%}
+                                    {% assign is_tech = tag | slice: 0, 4 %}
+                                    {%- if is_tech == "Tech"-%}
+                                        <a class="item__project button button--outline-primary button--rounded button--sm tech tech-{{tag | remove: "Tech-" | replace: "#", "S" | replace: "+", "P"}}"
+                                        href=/archive?tag={{tag | strip | url_encode}}>{{ tag | remove: "Tech-" }}
+                                        </a>
+                                    {%- endif -%}
+                                {%- endfor -%}
+
                             </li>
 
                             {%- elsif include.type == 'grid' -%} {%- if include.size == 'sm' -%}
