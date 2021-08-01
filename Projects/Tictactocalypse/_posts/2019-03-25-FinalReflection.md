@@ -7,7 +7,7 @@ tags:
 - Game Design
 - Gamedev
 prefix_category: true
-cover: assets/thumbnail.png
+cover: /Projects/Tictactocalypse/assets/thumbnail.png
 ---
 
 This game is fun to play and triggers competitive behaviors among players, but I think it lacks some elements that could have made it better.

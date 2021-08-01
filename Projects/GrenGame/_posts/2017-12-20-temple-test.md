@@ -6,7 +6,7 @@ permalink: Projects/GrenGame/Temple-tests
 tags:
 - Gamedev
 prefix_category: true
-cover: /GrenGame/assets/temple/Temple_Before.PNG
+cover: /Projects/GrenGame/assets/temple/Temple_Before.PNG
 ---
 To test my [first prototype](/GrenGame/First-Prototype) of growing plants, I wanted to have a temple I could cover in plants, so I created... **the TEMPLE!**
 I don't have any 3D skills so I just used cubes of different colors inside Unity to create a big structure.

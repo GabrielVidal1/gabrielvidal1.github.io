@@ -6,7 +6,7 @@ permalink: Projects/GrenGame/First-Prototype
 tags:
 - Gamedev
 prefix_category: true
-cover: /GrenGame/assets/prototype/Noise_BlackHole.png
+cover: /Projects/GrenGame/assets/prototype/Noise_BlackHole.png
 ---
 
 I decided to use [Unity](https://unity.com/) engine, because it's the game engine I'm the most comfortable working with.

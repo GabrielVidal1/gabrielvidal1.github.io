@@ -7,7 +7,7 @@ tags:
 - Game Design
 - Gamedev
 prefix_category: true
-cover: /Tictactocalypse/assets/thumbnail.png
+cover: /Projects/Tictactocalypse/assets/thumbnail.png
 ---
 
 ### Main Menu
