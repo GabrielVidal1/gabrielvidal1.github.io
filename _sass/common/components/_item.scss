@@ -27,8 +27,7 @@
 
 .item__project {
     @include media-breakpoint-down(md) {
-        visibility: hidden;
-        height: 0;
+        display: none;
     }
 }
 
