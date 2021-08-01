@@ -5,6 +5,8 @@ date: 2016-12-29
 tags:
 - Game jam
 - Gamedev
+- Tech-Unity
+- Tech-C#
 cover: /assets/posts/NewYork-Christmas/thumbnail.png
 ---
 

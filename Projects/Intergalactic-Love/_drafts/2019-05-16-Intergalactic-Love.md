@@ -8,6 +8,10 @@ permalink: /Projects/Intergalactic-Love/
 tags:
 - CSUMB
 - Gamedev
+- Tech-Unity
+- Tech-C#
+techs:
+- Test
 articles:
   data_source: site.categories.GrenGame
   show_excerpt: true

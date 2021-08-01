@@ -5,6 +5,8 @@ date: 2016-07-10
 tags:
 - Game jam
 - Gamedev
+- Tech-Unity
+- Tech-C#
 cover: /assets/posts/Primitive-Tower-Defense/thumbnail.png
 ---
 

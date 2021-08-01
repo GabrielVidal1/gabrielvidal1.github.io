@@ -7,6 +7,7 @@ categories:
 permalink: /Autochess/
 tags:
 - EPITA
+- Tech-C#
 ---
 
 TODO
