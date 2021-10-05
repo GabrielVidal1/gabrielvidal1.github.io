@@ -19,4 +19,11 @@ header:
       fr      : &FR       À propos
       # @end locale config
     url: /about
+
+  - titles:
+      # @start locale config
+      en      : &EN       Resume
+      fr      : &FR       CV
+      # @end locale config
+    url: /resume
   
