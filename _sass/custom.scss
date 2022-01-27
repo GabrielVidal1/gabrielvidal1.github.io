@@ -75,4 +75,14 @@
   @include tech;
   background-color: #4DE7A8 !important;
 }
+
+.tech-Vue {
+  @include tech;
+  background-color: #3FB27F !important;
+}
+
+.tech-Node {
+  @include tech;
+  background-color: #75AC5E !important;
+}
 /* end custom scss snippet */

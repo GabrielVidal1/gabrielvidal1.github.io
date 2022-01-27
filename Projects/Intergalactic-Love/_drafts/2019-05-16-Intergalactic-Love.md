@@ -17,7 +17,7 @@ articles:
   show_excerpt: true
   show_readmore: true
   show_info: true
-cover: /Intergalactic-Love/assets/thumbnail.png
+cover: /Projects/Intergalactic-Love/assets/thumbnail.png
 excerpt: TODO
 ---
 

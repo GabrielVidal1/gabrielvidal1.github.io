@@ -5,8 +5,6 @@ tags:
 - Work
 - EPITA
 - Tech-Angular
-- Tech-Typescript
-- Tech-Html
 - Tech-Sass
 cover: /assets/posts/France-IOI/logo.png
 ---
