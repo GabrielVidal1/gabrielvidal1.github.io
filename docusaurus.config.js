@@ -24,6 +24,8 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
+  plugins: ['docusaurus-tailwindcss'],
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -66,7 +68,12 @@ const config = {
         },
         items: [
           {
-            to: "/Projects",
+            to: "/posts",
+            label: "Posts",
+            position: "right",
+          },
+          {
+            to: "/projects",
             label: "Projects",
             position: "right",
           },
@@ -90,15 +97,6 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
           {
             title: "Community",
             items: [
@@ -125,7 +123,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/GabrielVidal1",
               },
             ],
           },
