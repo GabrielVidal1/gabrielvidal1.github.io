@@ -29,6 +29,10 @@ export const NAV_ITEMS: NavItems = {
     path: "/about",
     title: "about",
   },
+  resume: {
+    path: "/resume",
+    title: "resume",
+  },
 };
 
 export const SITE = {
@@ -36,8 +40,8 @@ export const SITE = {
   name: "Gabriel Vidal-Ayrinhac",
   title: "My Porfolio",
   description: "My Porfolio",
-  url: "https://astro-ink.vercel.app",
-  githubUrl: "https://github.com/one-aalam/astro-ink",
+  url: "https://gabrielvidal1.github.io",
+  githubUrl: "https://github.com/GabrielVidal1/gabrielvidal1.github.io",
   listDrafts: true,
   image:
     "https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
