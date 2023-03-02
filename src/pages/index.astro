@@ -1,0 +1,48 @@
+---
+export const prerender = true
+
+import { getCollection, getEntryBySlug } from 'astro:content'
+import DefaultPageLayout from '$/layouts/default.astro'
+import PostPreviewList from '$/components/PostPreviewList.astro'
+import ProjectPreviewList from "$/components/ProjectPreviewList.astro";
+
+
+const title = 'Home'
+const description = 'Astro-Ink is a crisp, minimal, personal blog theme for Astro'
+
+let posts = await getCollection('blog')
+posts = posts.sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()).slice(0, 5)
+
+let projects = await getCollection('project')
+projects = projects.sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()).slice(0, 3)
+
+---
+<DefaultPageLayout content={{ title, description }} showPageHeader={false}>
+<div class="flex flex-col gap-8">
+
+    <h1 class="page__title">Recent Projects</h1>
+    <ProjectPreviewList projects={projects} />
+
+    <div class="page__actions">
+        <a class="action__go-to-blog" href="/project" title="All Posts">All Projects &rarr;</a>
+    </div>
+
+    <h1 class="page__title">Recent Posts</h1>
+    <PostPreviewList posts={posts} />
+    <div class="page__actions">
+        <a class="action__go-to-blog" href="/blog" title="All Posts">All Posts &rarr;</a>
+    </div>
+</div>
+</DefaultPageLayout>
+
+<style>
+    .page__title {
+        @apply text-3xl font-extrabold text-theme-primary dark:text-theme-dark-primary
+    }
+    .page__actions {
+        @apply flex justify-center md:justify-end py-6
+    }
+    .action__go-to-blog {
+        @apply text-base uppercase text-gray-500 dark:text-gray-400 hover:underline
+    }
+</style>
