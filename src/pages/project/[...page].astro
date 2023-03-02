@@ -2,10 +2,10 @@
 export const prerender = true;
 
 import { getCollection } from "astro:content";
-import DefaultPageLayout from "$/layouts/default.astro";
-import ProjectPreviewList from "$/components/ProjectPreviewList.astro";
-import Paginator from "$/components/Paginator.astro";
-import { PAGE_SIZE } from "$/config";
+import DefaultPageLayout from "src/layouts/default.astro";
+import ProjectPreviewList from "src/components/ProjectPreviewList.astro";
+import Paginator from "src/components/Paginator.astro";
+import { PAGE_SIZE } from "src/config";
 
 let title = "Projects";
 let description = "All my projects posted so far...";

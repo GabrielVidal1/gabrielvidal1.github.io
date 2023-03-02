@@ -1,13 +1,14 @@
 ---
-title: "About"
-description: "TODO"
+title: "Archive"
+description: "All my posts in one place sorted by year."
 ---
 
 import DefaultPageLayout from "src/layouts/default.astro";
 import Prose from "src/components/Prose.astro";
+import Archive from "src/components/Archive.astro";
 
 <DefaultPageLayout
   content={{ title: frontmatter.title, description: frontmatter.description }}
 >
-  <Prose>TODO</Prose>
+  <Archive />
 </DefaultPageLayout>

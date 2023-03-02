@@ -1,0 +1,66 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import ArchivePostPreview from "./ArchivePostPreview.astro";
+import PostPreview from "./PostPreview.astro";
+
+const allPosts = await getCollection("blog");
+
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+
+const currentYear = new Date().getFullYear();
+const postsByYear = new Array(50)
+  .fill(0)
+  .map((_, i) => currentYear - i)
+  .map((year) => ({
+    year,
+    posts: sortedPosts.filter(
+      (post) => new Date(post.data.date).getFullYear() === year
+    ),
+  }));
+
+const tags = [
+  ...new Set<string>(
+    [].concat.apply(
+      [],
+      allPosts.map((post) => post.data.tags)
+    )
+  ),
+];
+const techs = [
+  ...new Set<string>(
+    [].concat.apply(
+      [],
+      allPosts.map((post) => post.data.techs ?? [])
+    )
+  ),
+];
+
+tags.sort();
+techs.sort();
+---
+
+<section class="post-preview__list">
+  {
+    postsByYear.map(({ posts, year }) => {
+      if (posts.length === 0) return null;
+      return (
+        <div>
+          <h2 class="year">{year}</h2>
+          {posts.map((post) => (
+            <ArchivePostPreview post={post} />
+          ))}
+        </div>
+      );
+    })
+  }
+</section>
+<style>
+  .post-preview__list {
+    @apply flex flex-col gap-2;
+  }
+  .year {
+    @apply text-2xl font-bold p-2;
+  }
+</style>

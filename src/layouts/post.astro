@@ -1,10 +1,11 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { Icon } from 'astro-icon'
-import { SITE, USE_POST_IMG_OVERLAY, USE_AUTHOR_CARD, USE_SUBSCRIPTION } from '$/config'
-import MainLayout from '$/components/MainLayout.astro'
-import BaseHead from '$/components/BaseHead.astro'
-import Prose from '$/components/Prose.astro'
+import { SITE, USE_POST_IMG_OVERLAY, USE_AUTHOR_CARD, USE_SUBSCRIPTION } from 'src/config'
+import MainLayout from 'src/components/MainLayout.astro'
+import BaseHead from 'src/components/BaseHead.astro'
+import Prose from 'src/components/Prose.astro'
+import { toSlug } from 'src/utils';
 
 interface Props {
     content: CollectionEntry<'blog'>['data'],
@@ -14,50 +15,41 @@ interface Props {
 }
 const { content, stats } = Astro.props
 
-const AUTHOR_NAME = content.author ? content.author : SITE?.author ? SITE?.author : "Author"
-const AUTHOR_TWITTER = content.authorTwitter ? content.authorTwitter : SITE?.authorTwitter ? SITE?.authorTwitter : ""
-const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorImage ? SITE?.authorImage : ""
+const AUTHOR_NAME = SITE?.author ?? "Author";
+const AUTHOR_TWITTER =  SITE?.authorTwitter ?? "";
+const AUTHOR_AVATAR =  SITE?.authorImage ?? "";
 ---
 <!doctype html>
 <html lang="en">
     <head>
-        <BaseHead {...content} title={ content.title ? `${ SITE.title } | ${content.title}` : SITE.title }/>
+        <BaseHead permalink={""} description={content.description ?? content.title} image={content.cover ?? ''} {...content} title={ content.title ? `${ SITE.title } | ${content.title}` : SITE.title }/>
     </head>
     <MainLayout>
         <div class="post__header">
             <div class="post__tags">
-                { content.tags.length > 0 && content.tags.map(tag => <a class="post__tag" href={`/tags/${tag}`} title={tag}>{tag}</a>) }
+                { content.tags.length > 0 && content.tags.map(tag => <a class="post__tag" href={`/tags/${toSlug(tag)}`} title={tag}>{tag}</a>) }
             </div>
             <h1 class="post__title">{ content.title }</h1>
             <h5 class={`post__desc ${AUTHOR_AVATAR ? 'flex flex-row gap-2' : ''}`}>
                 { AUTHOR_AVATAR ? <img class="avatar" src={AUTHOR_AVATAR} alt={`${ AUTHOR_NAME }'s avatar`} /> : ''}
                 <div class={AUTHOR_AVATAR ? 'flex flex-col border-l-2 pl-2' : ''}>
-                    {
-                        AUTHOR_TWITTER ?
-                            <a class="post__author" href={`https://twitter.com/${AUTHOR_TWITTER}`} title={`${AUTHOR_NAME}'s twitter`} target="_blank" rel="external">{ AUTHOR_NAME }</a>
-                            :
-                            <span class="post__author">{ AUTHOR_NAME }</span>
-                    }
                     {!AUTHOR_AVATAR ? ' | ' : ''}
                     <span class="post__date">{ new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(new Date(content.date))}
-                        <!-- Post Stats? -->
-                        | <Icon class="w-5 h-5 inline-block" pack="mdi" name="eye" /> {stats?.views ?? 12} views
-                        <!-- | <Icon class="w-5 h-5 inline-block" pack="mdi" name="clock" /> 2 mins -->
                     </span>
                 </div>
             </h5>
         </div>
-        {
-            content.image ?
+        <!-- {
+            content.cover ?
             USE_POST_IMG_OVERLAY ?
                 <div class="img__outer">
-                    <img src={content.image} alt={content.title} />
+                    <img src={content.cover} alt={content.title} />
                     <div class="img_gradient"></div>
                 </div><br/>
                 :
-                <img class="img__outer" src={content.image} alt={content.title} /><br/>
+                <img class="img__outer" src={content.cover} alt={content.title} /><br/>
                 : ""
-        }
+        } -->
         <Prose>
             <slot />
         </Prose>
@@ -72,7 +64,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
                                 <a class="author-card__author" href={`https://twitter.com/${AUTHOR_TWITTER}`} title={`${AUTHOR_NAME}'s twitter`} target="_blank" rel="external">{ AUTHOR_NAME }</a>
                                 :
                                 <span class="author-card__author">{ AUTHOR_NAME }</span>
-                        }
+                        } 
                         <p class="author-card__bio">{ SITE.authorBio }</p>
                         <br/>
                         {
@@ -122,7 +114,7 @@ const AUTHOR_AVATAR = content.authorImage ? content.authorImage : SITE?.authorIm
     }
 
     .img__outer {
-        @apply relative rounded-lg shadow-xl overflow-hidden
+        @apply w-full relative rounded-lg shadow-xl overflow-hidden
     }
     .img_gradient {
         @apply absolute z-10 w-full bottom-0 left-0 h-full bg-gradient-to-tr from-theme-primary dark:from-theme-dark-primary

@@ -1,35 +1,43 @@
 ---
-export const prerender = true
-import { getCollection } from 'astro:content'
-import { PAGE_SIZE } from '$/config'
-import DefaultPageLayout from '$/layouts/default.astro'
-import PostPreviewList from '$/components/PostPreviewList.astro'
-import Paginator from '$/components/Paginator.astro'
-
-let title = 'Posts By Tags'
-let description = 'All the articles posted so far...'
+export const prerender = true;
+import { getCollection } from "astro:content";
+import { PAGE_SIZE } from "src/config";
+import DefaultPageLayout from "src/layouts/default.astro";
+import PostPreviewList from "src/components/PostPreviewList.astro";
+import Paginator from "src/components/Paginator.astro";
+import { toSlug } from "src/utils";
 
 export async function getStaticPaths({ paginate }) {
-  const allPosts = await getCollection('blog')
-  const allTags = new Set()
-  allPosts.map(post => {
-      post.data.tags && post.data.tags.map(tag => allTags.add(tag.toLowerCase()))
-  })
+  const allPosts = await getCollection("blog");
+  const allTags = new Set<string>(
+    allPosts.flatMap((post) =>
+      [...post.data.tags, ...(post.data.techs ?? [])].map(toSlug)
+    )
+  );
 
   return Array.from(allTags).map((tag) => {
-    const filteredPosts = allPosts.filter((post) => post.data.tags.includes(tag))
+    const filteredPosts = allPosts.filter((post) =>
+      [...post.data.tags, ...(post.data.techs ?? [])]
+        .map((t) => toSlug(t))
+        .includes(tag)
+    );
     return paginate(filteredPosts, {
       params: { tag },
-      pageSize: PAGE_SIZE
+      pageSize: PAGE_SIZE,
     });
   });
 }
 
-const { page } = Astro.props
-const { tag } = Astro.params
+const { page } = Astro.props;
+const { tag } = Astro.params;
 ---
 
-<DefaultPageLayout content={{ title: `Posts by Tag: ${tag}`, description: `all of the articles we have posted and linked so far under the tag: ${tag}` }}>
-    <PostPreviewList posts={page.data} />
-    <Paginator page={page} />
+<DefaultPageLayout
+  content={{
+    title: `Posts by Tag: ${tag}`,
+    description: `all of the articles we have posted and linked so far under the tag: ${tag}`,
+  }}
+>
+  <PostPreviewList posts={page.data} />
+  <Paginator page={page} />
 </DefaultPageLayout>

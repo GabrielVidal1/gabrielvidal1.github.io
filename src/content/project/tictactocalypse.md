@@ -6,12 +6,12 @@ tags:
 techs:
 - Tech-Unity
 - Tech-C#
-cover: /Projects/Tictactocalypse/assets/thumbnail.png
+cover: /assets/projects/Tictactocalypse/thumbnail.png
 description: >
     Tictactocalypse is a funnier, realtime and apocalyptic version of the game TicTac-Toe. Players battle to place pieces on a board, and trigger events in order to disrupt others! Play up to four players at the same time!
 ---
 
-<img src="assets/cover.png" width="100%"/>
+<img src="/assets/projects/Tictactocalypse/cover.png" width="100%"/>
 
 Tictactocalypse is a funnier, realtime and apocalyptic version of the game TicTac-Toe. Players battle to place pieces on a board, and trigger events in order to disrupt others! Play up to four players at the same time!
 
@@ -26,7 +26,7 @@ The project was made in 3 weeks with the following game design documents to prod
 * #### A **[final reflection](/Projects/Tictactocalypse/Final-Reflection)** on the project, reflection on the game and its different iterations and the difference from the first prototype
 
 <p align="center">
-<img src="assets/screenshot1.png" width="80%" alt="screenshot 1">
+<img src="/assets/projects/Tictactocalypse/screenshot1.png" width="80%" alt="screenshot 1">
 </p>
 
 ### Download the game

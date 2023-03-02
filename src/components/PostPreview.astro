@@ -1,53 +1,60 @@
 ---
-import type { CollectionEntry } from 'astro:content'
-import { getMonthName } from '$/utils'
-import Prose from './Prose.astro'
+import type { CollectionEntry } from "astro:content";
+import { getMonthName } from "src/utils";
+import Prose from "./Prose.astro";
 
-interface Props<T extends 'blog' | 'project'> {
-    post: CollectionEntry<T>
-    type?: T
+interface Props<T extends "blog" | "project"> {
+  post: CollectionEntry<T>;
+  type?: T;
 }
 
-const { post: { data: post, slug, body }, type = "blog" } = Astro.props
+const {
+  post: { data: post, slug, body },
+  type = "blog",
+} = Astro.props;
 
-const description = post.description ?? body?.slice(0, 150) + '...'
-
+const description = post.description ?? body?.slice(0, 150) + "...";
+const cover = post.cover;
+const date = new Date(post.date);
 ---
+
 <div class="post-preview">
-    <div class="sm:w-20 md:w-32">
-        <div class="post-preview__date">
-            <span class="post-preview__date__day">{ new Date(post.date).getDate() }</span>
-            <span class="post-preview__date__month-n-year">{ `${getMonthName(post.date)} ${new Date(post.date).getFullYear()}` }</span>
-        </div>
+  <div class="w-40">
+    <img src={cover} />
+  </div>
+  <div class="flex-1">
+    <div class="flex justify-between">
+      <h4 class="post-preview__title dark:text-theme-dark-primary">
+        <a href={`/${type}/${slug}`} title={post.title}>{post.title}</a>
+      </h4>
+      <span class="post-preview__date__month-n-year">
+        {date.getDate()}
+        {getMonthName(date)}
+        {date.getFullYear()}
+      </span>
     </div>
-    <div class="flex-1">
-        <h4 class="post-preview__title dark:text-theme-dark-primary">
-            <a href={`/${type}/${slug}`} title={post.title}>{post.title}</a>
-        </h4>
-        <p class="post-preview__desc">
-            <Prose>
-                {description.replace(/#/g, '')}
-            </Prose>
-        </p>
-    </div>
+    <p class="date"></p>
+    <p class="post-preview__desc">
+      <Prose>
+        {description.replace(/#/g, "")}
+      </Prose>
+    </p>
+  </div>
 </div>
 <style>
-    .post-preview {
-        @apply  flex gap-6;
-    }
-    .post-preview__date {
-        @apply flex flex-col w-full text-center;
-    }
-    .post-preview__date__day {
-        @apply text-6xl font-semibold text-gray-500 dark:text-gray-300;
-    }
-    .post-preview__date__month-n-year {
-        @apply text-gray-400;
-    }
-    .post-preview__title {
-        @apply text-2xl font-semibold text-theme-primary dark:text-theme-dark-primary /* this doesn't works here */ hover:underline mb-2;
-    }
-    .post-preview__desc {
-        @apply text-lg leading-6 line-clamp-2 dark:text-white hyphens-auto;
-    }
+  .post-preview {
+    @apply flex gap-6;
+  }
+  .post-preview__date {
+    @apply flex flex-col w-full text-center;
+  }
+  .post-preview__date__month-n-year {
+    @apply text-gray-400  text-xl;
+  }
+  .post-preview__title {
+    @apply flex text-2xl font-semibold text-theme-primary dark:text-theme-dark-primary /* this doesn't works here */ hover:underline mb-2;
+  }
+  .post-preview__desc {
+    @apply text-lg leading-6 line-clamp-2 dark:text-white hyphens-auto;
+  }
 </style>
