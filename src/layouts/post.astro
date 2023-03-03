@@ -18,6 +18,8 @@ const { content, stats } = Astro.props
 const AUTHOR_NAME = SITE?.author ?? "Author";
 const AUTHOR_TWITTER =  SITE?.authorTwitter ?? "";
 const AUTHOR_AVATAR =  SITE?.authorImage ?? "";
+
+const project = content.project;
 ---
 <!doctype html>
 <html lang="en">
@@ -26,6 +28,7 @@ const AUTHOR_AVATAR =  SITE?.authorImage ?? "";
     </head>
     <MainLayout>
         <div class="post__header">
+            {project && <a class="post__tag text-gray-700" href={`/project/${project}`}>{project}</a>}
             <div class="post__tags">
                 { content.tags.length > 0 && content.tags.map(tag => <a class="post__tag" href={`/tags/${toSlug(tag)}`} title={tag}>{tag}</a>) }
             </div>

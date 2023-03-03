@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel/serverless";
+import react from "@astrojs/react";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // Full Astro Configuration API Documentation:
@@ -17,6 +17,8 @@ const __dirname = dirname(__filename);
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
 // @ts-check
+
+// https://astro.build/config
 
 // https://astro.build/config
 
@@ -41,6 +43,7 @@ export default defineConfig(
         },
       }),
       sitemap(),
+      react(),
     ],
     vite: {
       plugins: [],

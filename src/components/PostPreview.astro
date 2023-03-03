@@ -13,12 +13,17 @@ const {
   type = "blog",
 } = Astro.props;
 
-const description = post.description ?? body?.slice(0, 150) + "...";
+const rawDescription = post.description ?? body;
+const description =
+  rawDescription.length > 150
+    ? rawDescription.slice(0, 150) + "..."
+    : rawDescription;
+
 const cover = post.cover;
 const date = new Date(post.date);
 ---
 
-<div class="post-preview">
+<div class="post-preview not-prose">
   <div class="w-40">
     <img src={cover} />
   </div>
@@ -33,11 +38,8 @@ const date = new Date(post.date);
         {date.getFullYear()}
       </span>
     </div>
-    <p class="date"></p>
     <p class="post-preview__desc">
-      <Prose>
-        {description.replace(/#/g, "")}
-      </Prose>
+      {description}
     </p>
   </div>
 </div>

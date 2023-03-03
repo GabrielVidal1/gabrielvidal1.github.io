@@ -1,22 +1,27 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import PostPreview from './PostPreview.astro'
+import type { CollectionEntry } from "astro:content";
+import PostPreview from "./PostPreview.astro";
 
 interface Props {
-    projects: CollectionEntry<'project'>[]
+  projects: CollectionEntry<"project">[];
 }
 
-const { projects } = Astro.props
+const { projects } = Astro.props;
 
-const sortedProjectsSlugs = projects.sort((a, b) => new Date(projects[b].date).valueOf() - new Date(projects[a].date).valueOf());
+const sortedProjects = projects.sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
 ---
+
 <section class="post-preview__list">
-    {sortedProjectsSlugs.map((project) => (
-        <PostPreview post={project} type="project"/>
-    ))}
+  {
+    sortedProjects.map((project) => (
+      <PostPreview post={project} type="project" />
+    ))
+  }
 </section>
 <style>
-    .post-preview__list {
-        @apply flex flex-col gap-12
-    }
+  .post-preview__list {
+    @apply flex flex-col gap-12;
+  }
 </style>
