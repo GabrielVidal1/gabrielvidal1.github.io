@@ -9,11 +9,11 @@ interface Props<T extends "blog" | "project"> {
 }
 
 const {
-  post: { data: post, slug, body },
+  post: { data: post, slug },
   type = "blog",
 } = Astro.props;
 
-const rawDescription = post.description ?? body;
+const rawDescription = post.description;
 const description =
   rawDescription.length > 150
     ? rawDescription.slice(0, 150) + "..."
@@ -39,7 +39,9 @@ const date = new Date(post.date);
       </span>
     </div>
     <p class="post-preview__desc">
-      {description}
+      <Prose>
+        {description}
+      </Prose>
     </p>
   </div>
 </div>

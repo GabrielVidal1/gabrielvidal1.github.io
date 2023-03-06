@@ -2,15 +2,19 @@
 title: Pshiiit!
 date: "2017-08-16"
 tags:
-- Gamedev
-- Game jam
+  - Gamedev
+  - Game jam
 techs:
-- Unity
-- C#
+  - Unity
+  - C#
 cover: /assets/posts/Pshiiit/thumbnail.png
+description: I made this game for the 2017 Game Maker's Toolkit Jam. You incarnate a balloon and try to survive in a deadly desert !
 ---
 
+import Carousel from "../../components/Carousel.tsx";
+
 ![banner](/assets/posts/Pshiiit/banner.png)
+
 > You incarnate a balloon and try to survive in a deadly desert !
 
 I made this game for the [2017 Game Maker's Toolkit Jam](https://itch.io/jam/gmtk-jam).
@@ -33,24 +37,14 @@ The player has a limited amount of air inside the balloon and can resplenish its
 
 ## Screenshots of the game
 
-<div class="swiper swiper-demo my-3 swiper-demo--0" style="height: auto;">
-  <div class="swiper__wrapper">
-  {% for i in (0..4) %}
-    <div class="swiper__slide"><img class="lightbox-ignore" src="/assets/posts/Pshiiit/screen{{i}}.png"/></div>
-  {% endfor %}
-  </div>
-  <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
-  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
-</div>
-
+<Carousel
+  client:visible
+  data={[1, 2, 3, 4].map((i) => ({
+    image: `/assets/posts/Pshiiit/screen${i}.png`,
+  }))}
+/>
 ## Download the game
 
-<iframe frameborder="0" src="https://itch.io/embed/159263" width="100%" height="167"><a href="https://gabrielvidal.itch.io/pshiiit">Pshiiit! by Gabriel Vidal</a></iframe>
-
-<script>
-  {%- include scripts/lib/swiper.js -%}
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    $('.swiper-demo--0').swiper();
-  });
-</script>
+<iframe frameborder="0" src="https://itch.io/embed/159263" width="100%">
+  <a href="https://gabrielvidal.itch.io/pshiiit">Pshiiit! by Gabriel Vidal</a>
+</iframe>

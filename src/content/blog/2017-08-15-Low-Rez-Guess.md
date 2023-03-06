@@ -2,12 +2,13 @@
 title: Low Rez Guess
 date: "2017-08-15"
 tags:
-- Gamedev
-- Game jam
+  - Gamedev
+  - Game jam
 techs:
-- Unity
-- C#
+  - Unity
+  - C#
 cover: https://img.itch.zone/aW1hZ2UvMTY3NjEwLzc3NjI4NS5wbmc=/315x250%23c/yOGR3B.png
+description: This quick guessing arcade game has been made for the LowRez Jam 2017.
 ---
 
 ![LowRezGuess](/assets/posts/LowRezGuess/banner.png)
@@ -20,7 +21,7 @@ _In this game, your goal is to guess what is shown in images from various catego
 
 ## The idea
 
-My idea was to use the low resolution constraint to make things hard to decipher on screen. I then thought of a growing picture, that could start by being 1 * 1 pixel, and as the image grow, at some point you can understand what the image is showing. The player could gain points based on his speed: the faster he gets the picture, the more points he gets.
+My idea was to use the low resolution constraint to make things hard to decipher on screen. I then thought of a growing picture, that could start by being 1 \* 1 pixel, and as the image grow, at some point you can understand what the image is showing. The player could gain points based on his speed: the faster he gets the picture, the more points he gets.
 
 ## The game
 
@@ -38,7 +39,7 @@ I wanted to make a very accessible game, so I integrated internationalization by
 
 ## Tools
 
-* I mostly used [Unity](https://unity.com/) for everything from animations, IO, scripting and integration of all elements.
-* I made the music myself using [Bosca Ceoil](https://boscaceoil.net/)
-* [Freesound.org](https://freesound.org/) for the sound effects
-* As said earlier, all the images that the player can guess come from a training dataset for image recognition available on [Caltech's website](http://www.vision.caltech.edu/Image_Datasets/Caltech101/)
+- I mostly used [Unity](https://unity.com/) for everything from animations, IO, scripting and integration of all elements.
+- I made the music myself using [Bosca Ceoil](https://boscaceoil.net/)
+- [Freesound.org](https://freesound.org/) for the sound effects
+- As said earlier, all the images that the player can guess come from a training dataset for image recognition available on [Caltech's website](http://www.vision.caltech.edu/Image_Datasets/Caltech101/)

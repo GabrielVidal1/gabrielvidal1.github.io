@@ -38,7 +38,7 @@ export const NAV_ITEMS: NavItems = {
 export const SITE = {
   // Your site's detail?
   name: "Gabriel Vidal-Ayrinhac",
-  title: "My Porfolio",
+  title: "Gabriel Vidal-Ayrinhac Porfolio",
   description: "My Porfolio",
   url: "https://gabrielvidal1.github.io",
   githubUrl: "https://github.com/GabrielVidal1/gabrielvidal1.github.io",
