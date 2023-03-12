@@ -13,7 +13,7 @@ const {
   type = "blog",
 } = Astro.props;
 
-const rawDescription = post.description;
+const rawDescription = post.description ?? "";
 const description =
   rawDescription.length > 150
     ? rawDescription.slice(0, 150) + "..."

@@ -43,8 +43,8 @@ export const SITE = {
   url: "https://gabrielvidal1.github.io",
   githubUrl: "https://github.com/GabrielVidal1/gabrielvidal1.github.io",
   listDrafts: true,
-  image:
-    "https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
+  image: "",
+  //   "https://raw.githubusercontent.com/one-aalam/astro-ink/main/public/astro-banner.png",
   // YT video channel Id (used in media.astro)
   ytChannelId: "",
   // Optional, user/author settings (example)
