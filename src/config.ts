@@ -17,20 +17,12 @@ export const NAV_ITEMS: NavItems = {
     path: "/archive",
     title: "archive",
   },
-  tags: {
-    path: "/tags",
-    title: "tags",
-  },
-  // media: {
-  //   path: "/media",
-  //   title: "media",
-  // },
   about: {
     path: "/about",
     title: "about",
   },
   resume: {
-    path: "/resume",
+    path: "https://resume.gabriel.vidal--ayrinhac.xyz/",
     title: "resume",
   },
 };

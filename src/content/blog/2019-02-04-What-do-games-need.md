@@ -2,9 +2,10 @@
 title: What do games need
 date: "2019-02-04"
 tags:
-- CSUMB
-- Game Design
+  - CSUMB
+  - Game Design
 cover: https://www.perforce.com/sites/default/files/image/2020-08/image-blog-game-design-process.jpg
+description: What do games need? Text written for a Game design assignment where I had to answer this question.
 ---
 
 This text was written for a Game design assignment.

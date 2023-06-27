@@ -1,11 +1,12 @@
 ---
-title:  "Final Reflection"
+title: Final Reflection
 project: tictactocalypse
 date: "2019-03-25"
 tags:
-- Game Design
-- Gamedev
+  - Game Design
+  - Gamedev
 cover: /assets/projects/Tictactocalypse/thumbnail.png
+description: Final reflection on the game Tictactocalypse
 ---
 
 This game is fun to play and triggers competitive behaviors among players, but I think it lacks some elements that could have made it better.

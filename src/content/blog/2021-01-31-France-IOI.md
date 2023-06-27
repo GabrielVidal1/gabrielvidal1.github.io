@@ -1,18 +1,19 @@
 ---
 title: France-IOI internship
 tags:
-- Work
-- EPITA
+  - Work
+  - EPITA
 techs:
-- Angular
-- Sass
+  - Angular
+  - Sass
 cover: /assets/posts/France-IOI/logo.png
 date: "2021-01-31"
+description: My internship at France-IOI as a first time web developer intern
 ---
 
 ## France-IOI
 
-[France-IOI](http://www.france-ioi.org/) is a non-profit association founded in June 2004 with the aim of developing the selection and training of the French team for the International Olympiad in Informatics (IOI).  Its board of directors is composed of four founding members (Mathias Hiron, Arthur Charguéraud, Fabrice Bardèche and Joël Courtois) and 7 elected members (Guillaume Le Blanc, Ismael Belghiti, Jacques-Henri Jourdan, Loïc Février, Amaury Pouly, Benjamin Butin and Louis Jachiet).
+[France-IOI](http://www.france-ioi.org/) is a non-profit association founded in June 2004 with the aim of developing the selection and training of the French team for the International Olympiad in Informatics (IOI). Its board of directors is composed of four founding members (Mathias Hiron, Arthur Charguéraud, Fabrice Bardèche and Joël Courtois) and 7 elected members (Guillaume Le Blanc, Ismael Belghiti, Jacques-Henri Jourdan, Loïc Février, Amaury Pouly, Benjamin Butin and Louis Jachiet).
 
 The main objectives of the [France-IOI](http://www.france-ioi.org/) are:
 Train, select and support the French delegation to the IOI.
@@ -44,17 +45,17 @@ At the beginning, each pull request had to be reviewed multiple times, because I
 
 During this internship, I learned a few new technologies:
 
-* Angular
-* TypeScript
-* Rxjs
-* Sass
-* Karma
+- Angular
+- TypeScript
+- Rxjs
+- Sass
+- Karma
 
 I also developed my skills in the following:
 
-* git and Github
-* Javascript
-* the Agile Methodology
+- git and Github
+- Javascript
+- the Agile Methodology
 
 ## Final thoughts
 

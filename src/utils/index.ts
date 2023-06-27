@@ -29,7 +29,6 @@ export const toSlug = (str: string) => {
     "C++": "cpp",
     "C#": "c-sharp",
   };
-  console.log(str);
 
   return exceptions[str] ?? str.replace(/\s+/g, "-").toLowerCase();
 };

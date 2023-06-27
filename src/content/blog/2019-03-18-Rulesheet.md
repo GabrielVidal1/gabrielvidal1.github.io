@@ -1,11 +1,12 @@
 ---
-title:  "Rulesheet"
+title: "Rulesheet"
 project: tictactocalypse
 date: "2019-03-18"
 tags:
-- Game Design
-- Gamedev
+  - Game Design
+  - Gamedev
 cover: /assets/projects/Tictactocalypse/thumbnail.png
+description: Rulesheet of the game Tictactocalypse
 ---
 
 ### Main Menu

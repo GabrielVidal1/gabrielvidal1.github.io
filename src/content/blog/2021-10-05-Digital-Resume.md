@@ -1,13 +1,14 @@
 ---
 title: Digital Resume
 tags:
-- Work
+  - Work
 techs:
-- Nuxt
-- Html
-- Tailwind
+  - Nuxt
+  - Html
+  - Tailwind
 cover: https://gabrielvidal1.github.io/resume/preview.png
 date: "2021-10-05"
+description: New Resume website made with NuxtJS
 ---
 
 I wanted to remake my resume and why not test a new web front framework.

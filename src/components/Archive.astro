@@ -1,7 +1,7 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import ArchivePostPreview from "./ArchivePostPreview.astro";
-import PostPreview from "./PostPreview.astro";
+import { toSlug } from "src/utils";
 
 const allPosts = await getCollection("blog");
 
@@ -20,28 +20,55 @@ const postsByYear = new Array(50)
     ),
   }));
 
-const tags = [
-  ...new Set<string>(
-    [].concat.apply(
-      [],
-      allPosts.map((post) => post.data.tags)
-    )
-  ),
-];
+const tags = [...new Set<string>(allPosts.flatMap((post) => post.data.tags))];
 const techs = [
-  ...new Set<string>(
-    [].concat.apply(
-      [],
-      allPosts.map((post) => post.data.techs ?? [])
-    )
-  ),
+  ...new Set<string>(allPosts.flatMap((post) => post.data.techs ?? [])),
 ];
 
 tags.sort();
 techs.sort();
 ---
 
-<section class="post-preview__list">
+<div class="flex flex-col gap-8">
+  <ul class="tag-list">
+    {
+      tags.map((tag) => (
+        <li>
+          <a
+            class="tag"
+            href={`/tags/${toSlug(tag)}`}
+            title={`View posts tagged under "${tag}"`}
+          >
+            {tag}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h1
+    class="text-3xl font-extrabold text-theme-primary dark:text-theme-dark-primary"
+  >
+    Sort by technology
+  </h1>
+
+  <ul class="tag-list">
+    {
+      techs.map((tech) => (
+        <li>
+          <a
+            class="tag"
+            href={`/tags/${toSlug(tech)}`}
+            title={`View posts tagged under "${tech}"`}
+          >
+            {tech}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+<section class="post-preview__list mt-4">
   {
     postsByYear.map(({ posts, year }) => {
       if (posts.length === 0) return null;
@@ -66,5 +93,11 @@ techs.sort();
   }
   .year {
     @apply text-3xl font-bold p-2 mt-2;
+  }
+  .tag-list {
+    @apply list-none flex gap-2 flex-wrap;
+  }
+  .tag {
+    @apply inline-block text-xl px-4 py-1 rounded-full text-theme-primary bg-theme-dark-primary dark:bg-theme-primary dark:text-theme-dark-primary hover:bg-theme-primary hover:text-theme-dark-primary dark:hover:bg-theme-dark-primary dark:hover:text-theme-primary;
   }
 </style>
