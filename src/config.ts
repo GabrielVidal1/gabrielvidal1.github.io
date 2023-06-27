@@ -32,7 +32,7 @@ export const SITE = {
   name: "Gabriel Vidal-Ayrinhac",
   title: "Gabriel Vidal-Ayrinhac Porfolio",
   description: "Welcome to my personal website!",
-  url: "https://gabrielvidal1.github.io",
+  url: "https://blog.gabriel.vidal--ayrinhac.xyz/",
   githubUrl: "https://github.com/GabrielVidal1/gabrielvidal1.github.io",
   listDrafts: true,
   image: "",
@@ -48,7 +48,7 @@ export const SITE = {
   authorImage: "",
   //"https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png", // Example: https://pbs.twimg.com/profile_images/1272979356529221632/sxvncugt_400x400.jpg,
   // Author: Bio
-  authorBio: "TODO",
+  authorBio: "Fullstack engineer, passionate about web and game development. Generative AI enthusiast.",
 };
 
 // Ink - Theme configuration
