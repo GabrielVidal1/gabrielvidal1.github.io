@@ -9,6 +9,7 @@ const blogCollection = defineCollection({
         date: z.string(),
         cover: z.string().optional(),
         project: z.string().optional(),
+        links: z.array(z.string()).optional(),
         // category: z.string(),
     })
 })

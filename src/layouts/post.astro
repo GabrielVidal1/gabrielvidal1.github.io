@@ -1,11 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { Icon } from 'astro-icon'
-import { SITE, USE_POST_IMG_OVERLAY, USE_AUTHOR_CARD, USE_SUBSCRIPTION } from 'src/config'
+import { SITE, USE_AUTHOR_CARD, USE_SUBSCRIPTION } from 'src/config'
 import MainLayout from 'src/components/MainLayout.astro'
 import BaseHead from 'src/components/BaseHead.astro'
 import Prose from 'src/components/Prose.astro'
 import { toSlug } from 'src/utils';
+import LinkButton from "src/components/LinkButton"
 
 interface Props {
     content: CollectionEntry<'blog'>['data'],
@@ -55,8 +56,19 @@ const project = content.project;
         } -->
         <Prose>
             <slot />
+            {content.links && (
+                <div class="flex flex-col gap-2">
+                    <h3>Links</h3>
+                    <div class="flex gap-2 flex-wrap">
+                        {content.links.map((link) => (
+                            <LinkButton to={link} />
+                        ))}
+                    </div>
+                </div>
+
+            )}
         </Prose>
-        <div class="post__footer">
+        <div class="bg- post__footer">
             { USE_AUTHOR_CARD &&
                 <br/>
                 <div class="author-card">
