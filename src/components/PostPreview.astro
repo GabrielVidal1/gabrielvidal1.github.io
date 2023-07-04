@@ -28,11 +28,11 @@ const date = new Date(post.date);
     <img src={cover} />
   </div>
   <div class="flex-1">
-    <div class="flex justify-between">
+    <div class="flex flex-col justify-between sm:flex-row">
       <h4 class="post-preview__title dark:text-theme-dark-primary">
         <a href={`/${type}/${slug}`} title={post.title}>{post.title}</a>
       </h4>
-      <span class="post-preview__date__month-n-year">
+      <span class="post-preview__date__month-n-year text-sm sm:text-xl">
         {date.getDate()}
         {getMonthName(date)}
         {date.getFullYear()}
@@ -53,7 +53,7 @@ const date = new Date(post.date);
     @apply flex flex-col w-full text-center;
   }
   .post-preview__date__month-n-year {
-    @apply text-gray-400  text-xl;
+    @apply text-gray-400;
   }
   .post-preview__title {
     @apply flex text-2xl font-semibold text-theme-primary dark:text-theme-dark-primary /* this doesn't works here */ hover:underline mb-2;

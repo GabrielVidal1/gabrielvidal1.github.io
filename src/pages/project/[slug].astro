@@ -23,6 +23,12 @@ const { Content } = await entry.render();
 <PostLayout content={entry?.data}>
   <Content />
 
-  <h2 class="text-2xl font-bold">Posts</h2>
-  <PostPreviewList posts={posts} />
+  {
+    posts.length > 0 && (
+      <>
+        <h2 class="text-2xl font-bold">Posts</h2>
+        <PostPreviewList posts={posts} />
+      </>
+    )
+  }
 </PostLayout>
