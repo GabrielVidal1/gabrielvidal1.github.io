@@ -6,7 +6,7 @@ techs:
   - NextJS
   - Html
   - Tailwind
-cover: public/assets/posts/resume/resume_preview.png
+cover: /assets/posts/resume/resume_preview.png
 date: "2023-06-10"
 description: Updated Resume website made with NextJS + Tailwind hosted on Vercel
 ---

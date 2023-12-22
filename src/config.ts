@@ -31,7 +31,7 @@ export const SITE = {
   // Your site's detail?
   name: "Gabriel Vidal-Ayrinhac",
   title: "Gabriel Vidal-Ayrinhac Porfolio",
-  description: "Welcome to my personal website!",
+  // description: "Welcome to my personal website!",
   url: "https://blog.gabriel.vidal--ayrinhac.xyz/",
   githubUrl: "https://github.com/GabrielVidal1/gabrielvidal1.github.io",
   listDrafts: true,

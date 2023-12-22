@@ -4,7 +4,7 @@ tags:
   - AI
 techs:
   - Python
-cover: public/assets/posts/MusicGenDiscord/preview.png
+cover: /assets/posts/MusicGenDiscord/preview.png
 date: "2023-06-15"
 description: A music bot for discord that generates music with AI using the MusicGen model hosted on Banana.dev
 links:
